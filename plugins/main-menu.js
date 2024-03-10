@@ -20,6 +20,7 @@ let lkr = `\n🚀 *_ربط حزام الأمان ${name}, إلى السيد ال
 │ 🔹 *${usedPrefix}LOGO*
 │ 🔹 *${usedPrefix}GEO*
 │ 🔹 *${usedPrefix}TOANIME*
+│ 🔹 *${usedPrefix}TESTBOT*
 │ 🔹 *${usedPrefix}TOMP3*
 │ 🔹 *${usedPrefix}TOIMG*
 │ 🔹 *${usedPrefix}TOVID*
@@ -87,7 +88,7 @@ ${readMore}
 │ 📎 *Essaouidi*
 ╰────────────⦁`  
 conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, { mentions: [who] })
-m.react('⌨')
+m.react('⏳🇲🇦')
 }
 handler.help = ['allmenu']
 handler.tags = ['main']
