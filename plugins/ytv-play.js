@@ -36,7 +36,7 @@ let enviando;
       }
     }
   }
-  const { key } = await m.reply(`*_Please wait, Mr malik ᴘʀᴏᴄᴇssing ur ᴠɪᴅᴇᴏ_*\n\n*◉ ᴠɪᴅᴇᴏ  ᴄᴏᴍᴀɴᴅ .playdoc2 ᴏ .play4 ᴏ .ytmp4doc ◉*`);
+  const { key } = await m.reply(`*_Please wait, Essaouidi ᴘʀᴏᴄᴇssing ur ᴠɪᴅᴇᴏ_*\n\n*◉ ᴠɪᴅᴇᴏ  ᴄᴏᴍᴀɴᴅ .playdoc2 ᴏ .play4 ᴏ .ytmp4doc ◉*`);
   try {
     const formats = await bestFormat(youtubeLink, 'video');
     const buff = await getBuffer(formats.url);
@@ -72,7 +72,7 @@ let enviando;
     console.log(ee2)
     try {
       const mediaa = await ytMp4(youtubeLink);
-      await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `Mr-malik`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
+      await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `Essaouidi`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
       await conn.sendMessage(m.chat, {text: '*✅ Video downlowded successfully.*', edit: key}, {quoted: m});
       enviando = false
     } catch {
