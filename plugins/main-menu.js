@@ -5,7 +5,7 @@ let pp = './Assets/malik.jpeg'
 let more = String.fromCharCode(8206)
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let readMore = more.repeat(850) 
-let lkr = `\n🚀 *_Buckle up ${name}, إلى السيد السويدي ياسين نحن نذهب في مغامر _* 🚀\n\n╭───❮ *السويدي ياسين* ❯
+let lkr = `\n🚀 *_ربط حزام الأمان ${name}, إلى السيد السويدي ياسين نحن نذهب في مغامر _* 🚀\n\n╭───❮ *السويدي ياسين* ❯
 \n 
 ╭─❮ *Tools List* ❯
 │ 🔹 *${usedPrefix}QURAN*
