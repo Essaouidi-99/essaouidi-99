@@ -19,12 +19,12 @@ let img = await q.download?.()
 stiker = await mp4ToWebp(img, { pack: packname || global.packname, author: author || global.author })
 } else if (args[0] && isUrl(args[0])) {
 stiker = await createSticker(false, args[0], '', author, 20)
-} else throw `*RESPOND TO A IMAGE OR VIDEO OR GIF ${usedPrefix + command}*`
+} else throw `*رجاء قم بالاشارة للصورة التي تريد أن تحولها لملصق و اكتب الامر *.sticker* ${usedPrefix + command}*`
 } catch {
-stiker = '*huh*'	
+stiker = 'رجاء قم بالاشارة للصورة التي تريد أن تحولها لملصق و اكتب الامر \n *.sticker*'	
 } finally {
 m.reply(stiker)}}
-handler.help = ['sfull']
+handler.help = ['sticker']
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 export default handler
