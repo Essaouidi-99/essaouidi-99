@@ -1,11 +1,11 @@
 let handler = async (m, { conn, usedPrefix, command}) => {
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-if (!(who in global.db.data.users)) throw `❌ The User Is Not Found In My Database`
+if (!(who in global.db.data.users)) throw ` لم يتم العثور على المستخدم في قاعدة البيانات الخاصة بي`
 let pp = './Assets/malik.jpeg'
 let more = String.fromCharCode(8206)
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let readMore = more.repeat(850) 
-let lkr = `\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik-MD! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
+let lkr = `\n🚀 *_Buckle up ${name}, إلى السيد السويدي ياسين نحن نذهب في مغامر _* 🚀\n\n╭───❮ *السويدي ياسين* ❯
 \n 
 ╭─❮ *Tools List* ❯
 │ 🔹 *${usedPrefix}QURAN*
@@ -81,10 +81,10 @@ ${readMore}
 ╰─────────────⦁
 
 
-╭❮  *M-r Malik MD* ❯
+╭❮  *Essaouidi - Yassine* ❯
 │        🦹‍♂️
 │ 💡 Created By 
-│ 📎 *Malik-Experts*
+│ 📎 *Essaouidi*
 ╰────────────⦁`  
 conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, { mentions: [who] })
 m.react('⌨')
