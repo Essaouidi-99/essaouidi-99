@@ -14,7 +14,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
       global.videoList.splice(0, global.videoList.length);
     }
     const results = await yts(text);
-    const textoInfo = `○—⌈Mr-Malik YT Search⌋—○\n\n 🛰️ *REPLY* with Any *Number*`.trim();
+    const textoInfo = `○—⌈Essaouidi YT Search⌋—○\n\n 🛰️ *REPLY* with Any *Number*`.trim();
     const teks = results.all.map((v, i) => {
       const link = v.url;
       vids_.urls.push(link);
