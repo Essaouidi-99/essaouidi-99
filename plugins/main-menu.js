@@ -18,6 +18,9 @@ let lkr = `\n🚀 *ربط حزام الأمان ${name}, إلى السيد ال�
 │ 🔹 *${usedPrefix}IMGAI*
 │ 🔹 *${usedPrefix}REMOVEBG*
 │ 🔹 *${usedPrefix}LOGO*
+│ 🔹 *${usedPrefix}SALATFIRST*
+│ 🔹 *${usedPrefix}TZ*
+│ 🔹 *${usedPrefix}DX*
 │ 🔹 *${usedPrefix}GEO*
 │ 🔹 *${usedPrefix}TOANIME*
 │ 🔹 *${usedPrefix}TOMP3*
