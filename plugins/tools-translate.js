@@ -33,6 +33,6 @@ https://cloud.google.com/translate/docs/languages
 }
 handler.help = ['translate <lang> <text>']
 handler.tags = ['tools']
-handler.command = ['translate', 'tl', 'trad', 'tr']
+handler.command = ['translate', 'tl', 'trad', 'tr', 'tarjim']
 
 export default handler
