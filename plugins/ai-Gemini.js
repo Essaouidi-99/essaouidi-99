@@ -13,13 +13,13 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     const data = await response.json();
 
     if (data.status && data.data) {
-      const respuestaAPI = data.data + "/n_©️Gemini: ʙʏ ɴᴀꜱʀᴜʟʟᴀʜ ᴍᴀᴄʜɪ🦹‍♂️_";
+      const respuestaAPI = data.data + "/n_©️Gemini: By Essaouidi Yassine🦹‍♂️_";
       conn.reply(m.chat, respuestaAPI, m);
     } else {
-      throw '*Server is busy now. Try again Later.*';
+      throw '*.الخادم مشغول الآن. حاول مرة أخرى في وقت لاحق*';
     }
   } catch (error) {
-    throw `*Error*`;
+    throw `*خطأ*`;
   }
 };
 
