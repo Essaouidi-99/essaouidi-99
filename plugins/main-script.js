@@ -4,7 +4,7 @@ import axios from 'axios';
 
 let handler = async function (m, { conn, __dirname }) {
   const githubRepoURL = 'https://github.com/Essaouidi25';
-
+  'instagram.com/essaouidi_yassine'; 
   try {
   
     const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
@@ -39,11 +39,11 @@ let handler = async function (m, { conn, __dirname }) {
           }}}}}}, {})
     } else {
       // Handle the case where the API request fails
-      await conn.reply(m.chat, 'Unable to fetch repository information.', m);
+      await conn.reply(m.chat, 'خطأ ❌ هدا أمر يشتغل مع صاحب بوت فقط 😂 توصل مع هنا \ninstagram.com/essaouidi_yassine', m);
     }
   } catch (error) {
     console.error(error);
-    await conn.reply(m.chat, 'An error occurred while fetching repository information.', m);
+    await conn.reply(m.chat, 'خطأ ❌ هدا أمر يشتغل مع صاحب بوت فقط 😂 توصل مع هنا \ninstagram.com/essaouidi_yassine', m);
   }
 };
 
